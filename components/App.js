@@ -40,7 +40,7 @@ App = React.createClass({
             request.send();
         }
 	);
-  }
+  },
   
   getGif('https://api.giphy.com' + '/v1/gifs/random?api_key=' + '79d4ejI5WnmHsZqbA6TZOyeG2iB4101D' + '&tag=' + searchingText)
 .then(response => {
