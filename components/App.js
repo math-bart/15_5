@@ -21,7 +21,7 @@ App = React.createClass({
   },
   
   
-  function getGif(url) {
+  getGif: function(url) {
     return new Promise(
         function (resolve, reject) {
             const request = new XMLHttpRequest();
