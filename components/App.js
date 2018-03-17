@@ -20,22 +20,6 @@ App = React.createClass({
     }.bind(this));
   },
   
-  /*getGif: function(searchingText, callback) {
-    var url = 'https://api.giphy.com' + '/v1/gifs/random?api_key=' + '79d4ejI5WnmHsZqbA6TZOyeG2iB4101D' + '&tag=' + searchingText;
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', url);
-    xhr.onload = function() {
-      if (xhr.status === 200) {
-        var data = JSON.parse(xhr.responseText).data;
-        var gif = {
-          url: data.fixed_width_downsampled_url,
-          sourceUrl: data.url
-        };
-        callback(gif);
-      }
-    };
-    xhr.send();
-  },*/
   
   function getGif(url) {
     return new Promise(
